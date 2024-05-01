@@ -6,8 +6,7 @@
     "web": "expo start --web",
     "start": "react-native start",
     "test": "jest",
-    "postinstall": "jetify && yarn download-webrtc-bitecode",
-    "download-webrtc-bitecode": "./node_modules/react-native-webrtc/tools/downloadBitcode.sh",
+    "postinstall": "npx jetify",
     "apk": "cd android && ./gradlew assembleRelease && cd .."
   },
   "dependencies": {
@@ -16,6 +15,7 @@
     "expo": "~37.0.3",
     "expo-splash-screen": "^0.2.3",
     "expo-updates": "~0.2.0",
+    "jetify": "^1.0.2",
     "native-base": "^2.13.12",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -35,6 +35,7 @@
     "@babel/core": "~7.9.0",
     "babel-jest": "~25.2.6",
     "jest": "~25.2.6",
+    "jetifier": "^2.0.0",
     "react-test-renderer": "~16.9.0"
   },
   "jest": {
